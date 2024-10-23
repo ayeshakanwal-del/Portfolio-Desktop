@@ -362,7 +362,6 @@ button {
   font-family: 'Inter', sans-serif;
 }
 
-
 /* Desktop Media Queries */
 @media (min-width: 1024px) {
   .container,
