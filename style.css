@@ -1,0 +1,544 @@
+* { 
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .container {
+    width: 375px;
+    background-color: black;
+    border: 1px solid gray;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    width: 96%;
+    height: 48px;
+    padding: 2px 24px 2px 12px;
+  }
+  
+  .logo-placeholder {
+    color: #fff;
+    width: 94px;
+    height: 44px;
+    padding: 10px 12px;
+    animation: rotate-logo 1s ease-in-out;
+  }
+  
+  .logo-placeholder p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+  }
+  
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 24px;
+    height: 24px;
+    padding: 8px 0;
+  }
+  
+  .menu-icon span {
+    width: 18px;
+    height: 4px;
+    background-color: white;
+    border-radius: 1px;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .hero-section h1 {
+    color: #ff7a00;
+    font-family: 'Crete Round', serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 64px;
+    margin-top: 80px;
+    margin-left: 20px;
+  }
+  
+  .hero-section h2 {
+    font-family: 'Roboto', serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-left: 20px;
+    color: #fff5e1;
+  }
+  
+  .hero-section p {
+    color: white;
+    font-family: Poppins, sans-serif;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 20px;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    display: flex;
+    margin-top: 1px;
+    border-radius: 8px 0 0 0;
+    padding: 8px 0 0 0;
+    margin-left: 20px;
+  }
+  
+  .structure img {
+    margin-left: 205px;
+    margin-bottom: 10px;
+    width: 150.83px;
+    height: 300.89px;
+  }
+  
+  .main-container {
+    width: 375px;
+    padding: 120px 0;
+    background-color: #fff;
+    border: 1px solid gray;
+  }
+  
+  #RecentWorks {
+    font-family: 'Crete Round', serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 52px;
+    margin-left: 25px;
+  }
+  
+  .new1 {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  
+  .sub-list li {
+    list-style: none;
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    width: 267px;
+    height: 48px;
+    gap: 24px;
+  }
+  
+  .MultiPostSection {
+    width: 375px;
+    height: 568px;
+    padding: 80px 24px 2px 24px;
+    background-color: #fff;
+  }
+  
+  .MultiPostSection img {
+    width: 327px;
+    height: 237px;
+    transition: transform 0.3s ease;
+  }
+  
+  .MultiPostSection h1 {
+    font-family: 'Crete Round', serif;
+    margin-top: 20px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    width: 327px;
+  }
+  
+  .MultiPostSection p {
+    font-family: 'Inter', sans-serif;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 327px;
+  }
+  
+  .Postskills ul {
+    display: flex;
+    list-style-type: none;
+    width: 314px;
+    height: 40px;
+    gap: 12px;
+  }
+  
+  .Postskills ul li {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 20px;
+    padding: 10px 12px;
+    border: 1px solid grey;
+  }
+  
+  button {
+    transition: background-color 0.3s ease;
+  }
+  
+  .MultiPostSection button {
+    margin-top: 10px;
+    width: 124px;
+    height: 48px;
+    background-color: #ff6b00;
+    border-color: #ff6b00;
+  }
+  
+  .Postskills button,
+  .AboutMe button {
+    width: 131px;
+    height: 48px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #ff6b00;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  
+  .cardsection {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    padding: 24px;
+    max-width: 375px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background:
+      linear-gradient(
+        180.45deg,
+        rgba(38, 38, 38, 0) 0.75%,
+        rgba(38, 38, 38, 0.9) 61.94%
+      ),
+      url('/images/cardbg.png');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+    width: 327px;
+    height: 386px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+  }
+  
+  .card h1 {
+    font-family: 'Crete Round', serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    padding: 72px 16px 8px 16px;
+    width: 295px;
+  }
+  
+  .card p {
+    font-family: 'Inter', sans-serif;
+    padding: 18px 16px 8px 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    width: 295px;
+  }
+  
+  .skills {
+    margin-bottom: 16px;
+    padding: 10px 16px 8px 16px;
+  }
+  
+  .card ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 12px;
+  }
+  
+  .card ul li {
+    padding: 10px 12px;
+    border: 1px solid gray;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .card button {
+    width: 310px;
+    height: 48px;
+    background-color: #ff6b00;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  
+  .AboutMe {
+    margin-top: 90px;
+    width: 328px;
+    background-color: black;
+    padding: 120px 24px;
+  }
+  
+  .AboutMe h1 {
+    width: 327px;
+    color: #ff6b00;
+    font-family: 'Crete Round', serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 88px;
+    text-align: left;
+  }
+  
+  .AboutMe p {
+    margin-top: 30px;
+    width: 327px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #f4f5f7;
+  }
+  
+  .AboutMe button {
+    width: 156px;
+    height: 48px;
+    background: #ff6b00;
+  }
+  
+  .AboutMe img {
+    width: 182.63px;
+    height: 258.17px;
+    padding: 30px 0 10px 170px;
+  }
+  
+  .skill-set {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 8px 10px;
+  }
+  
+  .category {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .category-title {
+    font-family: 'InaiMathi', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .sub-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .sub-list li {
+    color: #fff;
+    padding: 8px 12px;
+  }
+  
+  
+  /* Desktop Media Queries */
+  @media (min-width: 1024px) {
+
+    .container, .main-container {
+      width: 1024px;
+  }
+
+
+    .MultiPostSection {
+      width: 1024px;
+      padding: 60px 24px;
+    }
+  
+    .MultiPostSection img {
+      width: 684px;
+      height: auto;
+    }
+  
+    .cardsection {
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 1024px;
+    }
+  
+    .card {
+      width: 310px;
+    }
+    .AboutMe {
+      margin-top: 90px;
+      width: 976px;
+      background-color:  #1a1a1a; 
+      padding: 60px 24px;
+      color: white;
+      text-align: left;
+  }
+  
+  .AboutMe h1 {
+      color: #ff7a00; 
+      font-family: 'Crete Round', serif;
+      font-size: 56px;
+      font-weight: 400;
+      line-height: 64px;
+      margin-bottom: 20px;
+  }
+  
+  .AboutMe p {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #f4f5f7;
+      margin-bottom: 10px;
+  }
+  
+  .AboutMe button {
+      background-color: #ff6b00;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+  }
+  .skill-set {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 140px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    text-align: left; 
+    margin: 0 auto; 
+}
+
+.category {
+    display: block; 
+ 
+}
+
+
+.category-title {
+    font-family: 'InaiMathi', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff6b00;
+    margin-bottom: 10px;
+}
+
+.sub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Icon styles */
+.diamond-icon,
+.square-icon,
+.circle-icon {
+    color: #ff6b00;
+    width: 18px;
+    height: 18px;
+}
+
+.Contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #ffffff;
+  padding: 120px 100px;
+  max-width: 1800px;
+  margin: 0 auto; 
+  color: #1d3557;
+  gap: 80px;
+}
+.Contact-section h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #1d3557;
+  max-width: 800px;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  padding: 12px;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #979493;
+  width: calc(100% - 1px); 
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #979493;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #ff6b00;
+  color: #ffffff;
+  padding: 14px 20px;
+  border: none;
+  font-size: 17px;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  align-self: flex-start; 
+  text-transform: uppercase;
+}
+
+.contact-form button:hover {
+  background-color: #e65a00;
+}
+
+
+  }
